@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 1440px;
+  /* height: 100vh; */
+  direction: rtl !important;
+  font-family: Anjoman !important;
+  font-size: 12px;
+  background-color: #C4C4C5;
+  margin: 0 auto;
+  background: url('/images/one.svg'), url('/images/two.svg'), url('/images/three.svg'), url('/images/four.svg');
+  background-position-x: center, center;
+  background-position-y: 350px, 1140px, 2134px, 3134px;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+}
+
+input,
+select,
+textarea {
+  font-family: Anjoman !important;
+  font-size: 12px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+.mainSlider {
+  background: linear-gradient(to bottom, #1B2262 60%, #f4f4f400 60%);
+}
+
+.bg-menufixed {
+  background: #111329f3 url("/images/header/svg/patternMenu.svg") no-repeat;
+  background-position: center bottom;
+}
+
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 1440px;
+    height: 100vh;
+    direction: rtl !important;
+    overflow-x: hidden !important;
+    font-family: Anjoman !important;
+    font-size: 12px;
+    background-color: #C4C4C5;
+    margin: 0 auto;
+    background: url('/images/one.svg'), url('/images/two.svg'), url('/images/four.svg'), url('/images/three.svg');
+    background-position-x: center, center;
+    background-position-y: 350px, 1040px, 2134px, 3134px;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+
+  html,
+  body {
+    width: 100%;
+    max-width: 1440px;
+    height: 100vh;
+    direction: rtl !important;
+    font-family: Anjoman !important;
+    font-size: 12px;
+    background-color: #C4C4C5;
+    margin: 0 auto;
+    background: url('/images/one.svg'), url('/images/two.svg'), url('/images/four.svg'), url('/images/three.svg');
+    background-position-x: center, center;
+    background-position-y: 350px, 973px, 1700px, 3134px;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .coursesbg {
+    background: linear-gradient(to top, #1B2262 40%, #f4f4f400 40%);
+  }
+}
